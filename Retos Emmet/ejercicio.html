@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Ejercicios (Reto Emmet)</title>
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+	<h2> Navigation  </h2>
+	<section>
+		<div class="ejemplo">
+			nav#mainNav.navbar.navbar-default.navbar-fixed-top.navbar-custom>(.container>(div.navbar-header.page-scroll>(button[type="button"].navbar-toggle[data-togle="collapse"][data-target="#bs-example-navbar-collapse-1"]>span.sr-only{Toggle Navigation}+{Menu}>i.fa.fa-bars)+a.navbar-brand[href="#page-top"]{Star Boostrap})+.collapse.navbar-collapse#bs-example-navbar-collapse-1>ul.nav.navbar-nav.navbar-rigth>(li.hidden>a[href="#page-top"])>(li.page-scroll>a[href="#portafolio"]{Portafolio})>(li.page-scroll>a[href="about"]{About})>(li.page-scroll>a[href="#contact"]{Contact}))
+		</div>
+		<div class="resultado">
+<xmp>
+<nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+	<div class="container">
+		<div class="navbar-header page-scroll"><button type="button" class="navbar-toggle" data-togle="collapse" data-target="#bs-example-navbar-collapse-1"><span class="sr-only">Toggle Navigation</span>Menu<i class="fa fa-bars"></i></button><a href="#page-top" class="navbar-brand">Star Boostrap</a></div>
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav navbar-rigth">
+				<li class="hidden"><a href="#page-top"></a></li>
+				<li class="page-scroll"><a href="#portafolio">Portafolio</a></li>
+				<li class="page-scroll"><a href="about">About</a></li>
+				<li class="page-scroll"><a href="#contact">Contact</a></li>
+			</ul>
+		</div>
+	</div>
+</nav>
+</xmp>
+		</div>
+	</section>
+	<!--  - - - - - - - - - - - - - - - - - - - - - - - - - -->
+	<h2> Header( + ) </h2>
+	<section>
+		<div class="ejemplo">
+			header>(.container#maincontent[tabindex="-1"]>.row>.col-lg-12>(img.img-responsive[src="img/profile.png"][alt=""])>.intro-text>h1.name{Star Boostrap}+hr.star-ligth+span.skills{Web Developer - Graphic Artist - User Experience Desinger})
+
+		</div>
+		<div class="resultado">
+<xmp>
+<header>
+	<div class="container" id="maincontent" tabindex="-1">
+		<div class="row">
+			<div class="col-lg-12">
+				<img src="img/profile.png" alt="" class="img-responsive">
+				<div class="intro-text">
+					<h1 class="name">Star Boostrap</h1>
+					<hr class="star-ligth">
+					<span class="skills">Web Developer - Graphic Artist - User Experience Desinger</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+
+</xmp>
+		</div>
+	</section>
+	<!--  - - - - - - - - - - - - - - - - - - - - - - - - - -->
+	<h2> About </h2>
+	<section>
+		<div class="ejemplo">
+			section.succes#about>(.container>(row>.col-lg.12.text-center>h2{About}+hr.star-ligth)+>(.row>(.col-lg-offset-2>p{Freeee})+>(.col-lg-4>p{Wheter})+>(.col-lg-8.col-lg-offset-2.text-center>a[href="#"].btn.btn-lg.btn-outline>i.fa.fa-download+{Download})))
+		</div>
+		<div class="resultado">
+<xmp>
+<section class="succes" id="about">
+	<div class="container">
+		<row>
+			<div class="col-lg 12 text-center">
+				<h2>About</h2>
+				<hr class="star-ligth">
+			</div>
+		</row>
+		<div class="row">
+			<div class="col-lg-offset-2">
+				<p>Freeee</p>
+			</div>
+			<div class="col-lg-4">
+				<p>Wheter</p>
+			</div>
+			<div class="col-lg-8 col-lg-offset-2 text-center"><a href="#" class="btn btn-lg btn-outline"><i class="fa fa-download"></i>Download</a></div>
+		</div>
+	</div>
+</section>
+</xmp>
+		</div>
+	</section>
+
+	<h2> Contact</h2>
+	<section>
+		<div class="ejemplo">
+			section#contact>div.container>(div.row>div.col-lg-12.text-center>h2{Contact Me}+hr.star-primary)+(div.row>div.col-l-8.col-lg-offset-2>form[name=sentMessage novalidate]#contactForm>(div.row.control-group>(div.form-group.col-xs-12.floating-label-form-group.controls>label[for=name]{Name}+input[type=text placeholder=Name required data-validation-required-message='Please enter your name.']#name.form-control+p.help-block.text-danger))+(div.form-group.col-xs-12.floating-label-form-group.controls>label[for=email]{Email Address}+input[type=email placeholder='Email Address' required data-validation-required-message='Please enter your email address.']#email.form-control+p.help-block.text-danger)+(div.form-group.col-xs-12.floating-label-form-group.controls>label[for=phone]{Phone Number}+input[type=tel placeholder='Phone Number' required data-validation-required-message='Please enter your phone number.']#phone.form-control+p.help-block.text-danger)+(div.form-group.col-xs-12.floating-label-form-group.controls>label[for=message]{Message}+textarea[rows=5 placeholder='Message' required data-validation-required-message='Please enter a message']#message.form-control+p.help-block.text-danger)+br+div#success+(div.row>div.form-group.col-xs-12>button.btn.btn-success.btn-lg{Send}[type=submit]))
+		</div>
+		<div class="resultado">
+<xmp>
+<ul>
+	<div class="contenedor"></div>
+</ul>
+</xmp>
+		
+<xmp>
+<ul>
+	<section id="contact">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 text-center">
+					<h2>Contact Me</h2>
+					<hr class="star-primary">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-l-8 col-lg-offset-2">
+					<form action="" name="sentMessage" novalidate="" id="contactForm">
+						<div class="row control-group">
+							<div class="form-group col-xs-12 floating-label-form-group controls">
+								<label for="name">Name</label>
+								<input type="text" placeholder="Name" required="" data-validation-required-message="Please enter your name." id="name" class="form-control">
+								<p class="help-block text-danger"></p>
+							</div>
+						</div>
+						<div class="form-group col-xs-12 floating-label-form-group controls">
+							<label for="email">Email Address</label>
+							<input type="email" placeholder="Email Address" required="" data-validation-required-message="Please enter your email address." id="email" class="form-control">
+							<p class="help-block text-danger"></p>
+						</div>
+						<div class="form-group col-xs-12 floating-label-form-group controls">
+							<label for="phone">Phone Number</label>
+							<input type="tel" placeholder="Phone Number" required="" data-validation-required-message="Please enter your phone number." id="phone" class="form-control">
+							<p class="help-block text-danger"></p>
+						</div>
+						<div class="form-group col-xs-12 floating-label-form-group controls">
+							<label for="message">Message</label>
+							<textarea name="" id="message" cols="30" rows="5" placeholder="Message" required="" data-validation-required-message="Please enter a message" class="form-control"></textarea>
+							<p class="help-block text-danger"></p>
+						</div>
+						<br>
+						<div id="success"></div>
+						<div class="row">
+							<div class="form-group col-xs-12"><button class="btn btn-success btn-lg">Send</button></div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+</ul>
+</xmp>
+		</div>
+	</section>
+
+	<h2> Footer </h2>
+	<section>
+		<div class="ejemplo">
+			footer.text-center>(div.footer-above>div.container>div.row>(div.footer-col.col-md-4>h3{Location}+p{3481 Melrose Place <br> Beverly Hills,  CA 90210})+(div.footer-col.col-md-4>h3{Around the web}+(ul.list-inline>(li>a[href=#].btn-social.btn-outline>span.sr-only{Facebook}+i.fa.fa-fw.fa-facebook)+(li>a[href=#].btn-social.btn-outline>span.sr-only{Google Plus}+i.fa.fa-fw.fa-google-plus)+(li>a[href=#].btn-social.btn-outline>span.sr-only{Twitter}+i.fa.fa-fw.fa-twitter)+(li>a[href=#].btn-social.btn-outline>span.sr-only{Linked In}+i.fa.fa-fw.fa-linkedin)+(li>a[href=#].btn-social.btn-outline>span.sr-only{Dribble}+i.fa.fa-fw.fa-dribble)))+(div.footer-col.col-md-4>h3{About Freelance}+p{Freelance is a free to use, open source Bootstrap Theme created by}>a[href=http://startbootstrap.com]{Start Bootstrap}))+(div.footer-below>div.container>div.row>div.col-lg-12{Copyright &copy; Your Website 2016})
+		</div>
+		<div class="resultado">
+<xmp>
+	
+	<footer class="text-center">
+		<div class="footer-above">
+			<div class="container">
+				<div class="row">
+					<div class="footer-col col-md-4">
+						<h3>Location</h3>
+						<p>3481 Melrose Place <br> Beverly Hills,  CA 90210</p>
+					</div>
+					<div class="footer-col col-md-4">
+						<h3>Around the web</h3>
+						<ul class="list-inline">
+							<li><a href="#" class="btn-social btn-outline"><span class="sr-only">Facebook</span><i class="fa fa-fw fa-facebook"></i></a></li>
+							<li><a href="#" class="btn-social btn-outline"><span class="sr-only">Google Plus</span><i class="fa fa-fw fa-google-plus"></i></a></li>
+							<li><a href="#" class="btn-social btn-outline"><span class="sr-only">Twitter</span><i class="fa fa-fw fa-twitter"></i></a></li>
+							<li><a href="#" class="btn-social btn-outline"><span class="sr-only">Linked In</span><i class="fa fa-fw fa-linkedin"></i></a></li>
+							<li><a href="#" class="btn-social btn-outline"><span class="sr-only">Dribble</span><i class="fa fa-fw fa-dribble"></i></a></li>
+						</ul>
+					</div>
+					<div class="footer-col col-md-4">
+						<h3>About Freelance</h3>
+						<p>Freelance is a free to use, open source Bootstrap Theme created by<a href="http://startbootstrap.com">Start Bootstrap</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-below">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">Copyright &copy; Your Website 2016</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+</xmp>
+		</div>
+	</section>
+
+	
+
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('.resultado').hide();
+			$('section').on('click', '.ejemplo', function(event) {
+				event.preventDefault();
+				$(this).next('.resultado').slideToggle('slow');
+			});
+		});
+	</script>
+</body>
+</html>
