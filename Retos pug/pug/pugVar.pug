@@ -1,0 +1,20 @@
+- var authorised = true;
+
+div.container-fluid
+	if authorised
+		div(class="row")
+			div(class="col-md-12")
+				div(class="team text-center")
+					div(class="cover", style="background:url('img/team/team-cover1.jpg'); background-size:cover;")
+						div(class="overlay text-center")
+							h3(class="white") $69.00
+							h5(class="light light-white") 1 - 5 sessions / month
+	else
+		div(class="row")
+			div(class="col-md-12")
+				div(class="team text-center")
+					div(class="cover", style="background:url('img/team/team-cover1.jpg'); background-size:cover;")
+						div(class="overlay text-center")
+							h3(class="white") $90.00
+							h5(class="light light-white") 5 - 10 sessions / month
+	

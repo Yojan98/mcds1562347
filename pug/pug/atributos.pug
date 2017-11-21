@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+html(lang="en")
+head
+	meta(charset="UTF-8")
+	title Atributos
+body
+	p Atributos en linea
+	a(class="button", href="http://www.google.com", target="_blank") Google
+	p Atributos multi-linea
+	input(
+		type='checkbox'
+		name='agreement'
+		checked
+		)
+	p Atributos booleanos
+	input(type='checkbox' checked=true)
+	input(type='checkbox' checked=false)
+	p Estilos en los atributos
+	a(style={color: 'white', background:'crimson'}) Style
+	- var clases = ['yellow', 'blue', 'red']
+	a(class=clases) Clases
+	p Clases literal
+	a.button a.button
+	.link link
+	button.large.red.center
+	p Identificador  literal
+	a#link1 link1
+	#btn1 btn1

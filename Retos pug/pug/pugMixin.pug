@@ -1,0 +1,9 @@
+mixin nav(classname, url, texto)
+	li(class=classname)
+		a(href=url) texto
+ul
+	+nav('active','#intro','Home')
+	+nav('','#services','About Us')
+	+nav('','#team','Cleaning Services')
+	+nav('','#pricing','Pricing')
+	+nav('','#contact','Contact')

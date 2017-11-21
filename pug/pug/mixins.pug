@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+html(lang="en")
+head
+	meta(charset="UTF-8")
+	title Mixins
+body
+	//- Declaration
+	mixin pet(name)
+		ul
+			li.pet= name
+	mixin list
+		ul
+			li Element1
+			li Element2
+			li Element3
+	//- Use it
+	+list
+	+list
+	+pet('cat')
+	+pet('dog')
+	+pet('pig')

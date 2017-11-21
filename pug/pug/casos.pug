@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+html(lang="en")
+head
+	meta(charset="UTF-8")
+	title Casos en pug
+body
+	- var friends = 3
+	case friends
+		when 0
+			p ¡Oh! No tienes amigos
+		when 1
+			p ¡Mmmmm! tienes un amigo
+		default
+			p ¡Wow! tienes #{friends} amigos

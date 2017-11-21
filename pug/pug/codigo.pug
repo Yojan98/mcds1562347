@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+html(lang="en")
+head
+	meta(charset="UTF-8")
+	title Código en pug
+body
+	p Código sin búfer
+	-for (var i = 0; i < 10; i++)
+		li item
+	-var list = ["Red", "Green", "Blue"]
+	each item in list
+		li= item
+	p Código con búfer
+	-for (var i = 0; i < 10; i++)
+		li <strong>item</strong>
+	p= 'Code contain <strong>html</strong>'
+	p!= 'Code contain <strong>html</strong>'
