@@ -1,0 +1,22 @@
+body {
+	background-color: #14BDDC;
+	font: 16px Arial;
+	color: white;
+	article {
+		background-color: rgba(0, 0, 0, 0.8);
+		padding: 20px;
+		margin: 40px auto;
+		width: 600px;
+		h2 {
+			text-transform: uppercase;
+			text-align: center;
+		}
+		p {
+			background-color: rgba(255,255,255,.1);
+			border: 1px dashed rgba(255,255,255,.4);
+			text-align: justify;
+			line-height: 2em;
+			padding: 20px;
+		}
+	}
+}

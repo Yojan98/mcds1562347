@@ -1,0 +1,25 @@
+body {
+  font: 18px Tahoma;
+}
+
+nav.menu {
+  width: 260px;
+}
+nav.menu ul {
+  list-style: none;
+  padding: 0px;
+}
+nav.menu ul li {
+  background-color: seagreen;
+  color: white;
+  padding: 4px;
+  margin: 2px 0px;
+  transition: all 0.5s;
+}
+nav.menu ul li:hover {
+  cursor: pointer;
+  transform: translateX(20px);
+}
+nav.menu ul li.active {
+  background-color: #0E87F8;
+}
