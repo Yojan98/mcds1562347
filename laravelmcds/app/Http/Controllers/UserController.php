@@ -140,4 +140,10 @@ class UserController extends Controller
         return redirect('user')
             ->with('status', 'El usuario'.$user->username.' se elimino con exito!');
     }
+
+    public function pdf() {
+        $users = User::all();
+        $pdf = \PDF::loadView('users.pdf', compact('users'));
+        return $pdf->download('users.pdf');
+    }
 }

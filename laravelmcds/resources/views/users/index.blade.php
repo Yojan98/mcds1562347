@@ -12,6 +12,9 @@
 				<a href="{{ url('user/create') }}" class="btn btn-success">
 					<i class="fa fa-plus"></i>Usuario
 				</a>
+				<a href="{{ url('userspdf') }}" class="btn btn-info"><i class="fa fa-file-pdf"></i></a>
+				<a href="{{ url('') }}" class="btn btn-info"><i class="fa fa-file-excel"></i></a>
+
 				
 				<table class="table table-striped table-hover table-bordered">
 					<hr>
@@ -35,7 +38,7 @@
 							<td> <img src="{{ asset(substr($user->photo, 7 )) }}" width="35px" ></td>
 							<td>
 								<a href="{{ url('user/'.$user->id) }}" class="btn btn-primary"> <i class="fa fa-search"></i> </a>
-								<a href="{{ url('user/'.$user->id.'/edit') }}" class="btn btn-success"> <i class="fa fa-pencil"></i></a>
+								<a href="{{ url('user/'.$user->id.'/edit') }}" class="btn btn-success"> <i class="fa fa-pencil-alt"></i></a>
 
 								<form action="{{ url('user/'.$user->id)}}" method="post" style="display: inline-block;">
 									{{ method_field('delete')}}

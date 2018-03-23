@@ -15,7 +15,17 @@ Route::get('/', 'WelcomeController@index');
 
 
 Route::group(['middleware' => 'admin'], function () {
+	// User
 	Route::resource('user', 'UserController');
+	Route::get('userspdf', 'UserController@pdf');
+
+	// Category
+	Route::resource('category', 'CategoryController');
+	
+	// Article
+	Route::resource('article', 'ArticleController');
+
+
 });
 
 

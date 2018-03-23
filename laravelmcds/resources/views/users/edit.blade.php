@@ -8,7 +8,7 @@
 <div class="row">
 	<div class="col-md-6 col-md-offset-3">
 
-<h1 class="text-center"> <i class="fa fa-pencil">Modificar Usuarios</i></h1>
+<h1 class="text-center"> <i class="fa fa-pencil-alt">Modificar Usuarios</i></h1>
 <hr>
 <ul class="breadcrumb">
 	<li><a href="{{ url('user') }}">Módulo Uusuario</a></li>
